@@ -21,6 +21,7 @@ class Books{
 }
 class Novel extends Books{
 	var $publisher;
+	public static $author='author';
 	function setPublisher($par){
 		$this->publisher=$par;
 	}
@@ -43,6 +44,6 @@ foreach($books as $book):
 endforeach;
 echo $book->getTitle();
 const pi=3.14;
-$pi=3.45;
-echo pi;
+//echo pi;
+echo Novel::$author;
 ?>
